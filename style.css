@@ -1,0 +1,9 @@
+#outer-square {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#outer-square div {
+    width: 100px;
+    height: 20px;
+}
