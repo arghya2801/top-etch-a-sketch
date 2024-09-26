@@ -1,9 +1,15 @@
 #outer-square {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
+    width: 100%x;
 }
 
 #outer-square div {
-    width: 100px;
-    height: 20px;
+    border: 2px solid black;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
 }
