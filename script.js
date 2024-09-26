@@ -13,7 +13,7 @@ function makeGrid(grid_size){
     for (let i=0; i<grid_size; i++){
         var box = document.createElement("div");
         box.classList.add("boxes");
-        box.innerHTML = "Hello World";
+        // box.innerHTML = "Hello World";
         box.style.width = box_size;
         box.style.height = box_size;
         // box.style.width = "200px";
