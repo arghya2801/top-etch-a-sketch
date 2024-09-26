@@ -8,6 +8,9 @@ function calculateDivWidth() {
 
 box_size = calculateDivWidth() + "px";
 
+function makeGrid(){
+    console.log("hello");
+}
 
 for (let i=0; i<grid_size; i++){
     var box = document.createElement("div");
@@ -21,9 +24,24 @@ for (let i=0; i<grid_size; i++){
         event.target.style.backgroundColor = "#5ebfea";
     });
     
-    box.addEventListener("mouseout", (event) => {
-        event.target.style.backgroundColor = ""; // Reset to default background color
-    });
+    // box.addEventListener("mouseout", (event) => {
+    //     event.target.style.backgroundColor = "";
+    // });
     
     document.getElementById("outer-square").appendChild(box);
 }
+
+function gridSizeInput() {
+    grid_size_input = prompt("Enter grid size: ");
+    return grid_size_input;
+}
+
+let grid_button = document.getElementById("button1");
+grid_button.addEventListener("click", () => {
+    console.log("click success");
+    gridSizeInput();
+})
+
+// function getHumanChoice(){
+//     let human_choice = prompt("Enter choice \n1. Rock \n2. Paper \n3. Scissors");
+//     return human_choice;
