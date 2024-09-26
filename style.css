@@ -1,8 +1,10 @@
 #outer-square {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    /* width: 100%x; */
+    justify-content: space-between;
+    width: 625px;
+    height: 625px;
+
 }
 
 #outer-square div {
